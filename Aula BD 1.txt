@@ -1,0 +1,140 @@
+-- create database itau;
+use itau;
+
+create table itau.clientes(
+codigo_cliente integer not null,
+nome_cliente  varchar(50) not null,
+idade_cliente integer(3) not null,
+email_cliente varchar(80) not null,
+primary key (codigo_cliente));
+
+describe itau.clientes;
+
+insert into itau.clientes
+(codigo_cliente,nome_cliente,idade_cliente,email_cliente)
+values
+(1,"Luiz Brito",28,"luizb@itau.com.br"),
+(2,"Carlos Eduardo",23,"carlose@itau.com.br"),
+(3,"Lais Lara",18,"laisl@itau.com.br"),
+(4,"Icaro Araujo",20,"icaroa@itau.com.br");
+
+select * from itau.clientes;
+
+use itau;
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (5,"Cynthia C. Goff",41,"est@Quisquelibero.co.uk"),(6,"Whilemina B. Kinney",78,"Nullam.enim.Sed@Suspendisse.ca"),(7,"Quemby M. Hardin",73,"dapibus.rutrum.justo@mollisPhasellus.net"),(8,"Marny K. Craft",55,"mi.enim@Phasellus.com"),(9,"Astra Morrison",19,"in@risusat.org"),(10,"Germane Turner",98,"in.lobortis.tellus@lacusQuisque.net"),(11,"Alec B. Luna",49,"nunc@Duis.co.uk"),(12,"Gil Gonzalez",96,"tortor@id.net"),(13,"Jessica M. Wilkins",20,"ipsum.Suspendisse@turpisvitaepurus.net"),(14,"Leilani Cantrell",83,"iaculis.enim.sit@necleo.ca");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (15,"Brenden E. Munoz",40,"tempus.risus@enim.edu"),(16,"Harper N. Hubbard",26,"vitae.erat.vel@Phasellusdolor.com"),(17,"Carla N. Whitley",50,"Integer@volutpatNulla.edu"),(18,"Axel Church",45,"Fusce@lobortis.com"),(19,"Illana I. Copeland",39,"per@elitpretiumet.org"),(20,"Seth Bishop",21,"dis.parturient@eros.edu"),(21,"Miriam M. Joyce",26,"sapien@quamquisdiam.com"),(22,"Charissa Horn",20,"feugiat.Lorem@nec.net"),(23,"Quail Marquez",76,"Nullam.scelerisque@liberoInteger.com"),(24,"Kai F. Tyler",28,"interdum.Curabitur.dictum@estNuncullamcorper.com");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (25,"Jocelyn Hendricks",44,"sociis@Integer.net"),(26,"Melinda K. Randall",48,"penatibus.et.magnis@euelitNulla.edu"),(27,"Penelope R. Mooney",70,"sem.elit@convallisincursus.edu"),(28,"Christine N. House",23,"Quisque.imperdiet@nisi.org"),(29,"Chadwick A. Evans",100,"metus@quispede.ca"),(30,"Bell F. Cortez",95,"aliquet@primis.co.uk"),(31,"Jamalia N. Flores",39,"vitae.mauris.sit@ultrices.ca"),(32,"Cade Salazar",47,"molestie@vehiculaaliquet.net"),(33,"Nero Kirkland",48,"mi.Duis.risus@vestibulum.edu"),(34,"Fredericka Walls",26,"blandit.Nam@miacmattis.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (35,"Alden Y. Parsons",77,"ut.nisi.a@erosProin.edu"),(36,"Kessie Z. William",92,"eleifend.nec@eratvitaerisus.net"),(37,"Patricia P. Davidson",30,"Nunc@augueut.co.uk"),(38,"Kelly Tran",51,"neque@massaVestibulumaccumsan.ca"),(39,"Destiny N. Bryant",71,"ac.tellus@Suspendissealiquetmolestie.net"),(40,"Hoyt J. Stout",42,"ac@seddictumeleifend.com"),(41,"Chase Z. Clark",22,"pulvinar.arcu.et@elita.com"),(42,"Natalie F. Martinez",62,"ullamcorper.Duis.cursus@adipiscing.edu"),(43,"Jarrod Q. Rocha",35,"volutpat.nunc.sit@volutpat.com"),(44,"Quynn S. Guerrero",46,"velit.dui@Nullam.org");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (45,"Gil T. Church",19,"dolor@Nulla.co.uk"),(46,"Idona H. Weeks",18,"dui@amet.com"),(47,"Rajah R. Riley",74,"a@nonsapien.net"),(48,"Kuame R. Fry",72,"ridiculus.mus.Proin@elit.net"),(49,"Julian Combs",56,"in@lacus.net"),(50,"Gannon Atkinson",94,"nunc.ac.mattis@euismod.net"),(51,"Jesse L. Clarke",57,"vitae@venenatisamagna.ca"),(52,"Marshall Lynch",86,"Proin@rhoncusNullamvelit.org"),(53,"Rashad Ellison",46,"ante@tristiquepellentesquetellus.com"),(54,"Ulysses X. Lynch",41,"Etiam@velquamdignissim.edu");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (55,"Lana K. Guthrie",37,"lectus@egetvenenatisa.com"),(56,"Norman Shelton",32,"mollis.lectus@Quisquepurussapien.com"),(57,"Abraham X. Middleton",94,"dapibus.quam.quis@libero.edu"),(58,"Vivien Fitzpatrick",85,"erat.Sed.nunc@velitQuisque.ca"),(59,"George Steele",93,"auctor@dolordolortempus.net"),(60,"Dahlia Frank",51,"viverra@euismodurna.co.uk"),(61,"Ainsley Battle",50,"parturient.montes@aliquet.net"),(62,"Imelda F. Cline",45,"turpis.non@ligulatortor.edu"),(63,"Danielle H. Joyner",83,"at.libero.Morbi@tinciduntDonec.ca"),(64,"Kuame Robbins",37,"et.magnis@Donecnibh.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (65,"Beau U. Lindsey",89,"egestas.Sed.pharetra@neque.co.uk"),(66,"Bernard Q. Mccormick",49,"varius.Nam.porttitor@dictum.co.uk"),(67,"Ira T. Rasmussen",18,"Nunc@nasceturridiculusmus.co.uk"),(68,"Ivan X. Snyder",28,"Cras.vulputate.velit@faucibus.org"),(69,"Fletcher H. Curry",37,"lorem@Suspendissealiquetsem.edu"),(70,"Kiona Ferrell",75,"molestie@felis.co.uk"),(71,"Jerome Finley",41,"augue.Sed@nisinibh.co.uk"),(72,"Leonard G. Romero",65,"urna.Nunc.quis@pedenonummy.com"),(73,"Avram Haynes",63,"Fusce.feugiat@Aliquamnec.org"),(74,"Tobias B. Travis",89,"et@atortorNunc.com");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (75,"Rowan L. Harrison",80,"orci.Ut@dapibusrutrumjusto.com"),(76,"Olympia Parker",21,"ligula.tortor.dictum@utipsumac.ca"),(77,"Quincy Y. Fulton",41,"sapien@Classaptenttaciti.co.uk"),(78,"Bruce Mcgowan",38,"ut@Morbisitamet.org"),(79,"Merritt Wiley",68,"magna@orciDonecnibh.edu"),(80,"Gage C. Tran",68,"natoque.penatibus@rutrum.co.uk"),(81,"Jessica R. Bonner",59,"malesuada.fames@acturpisegestas.co.uk"),(82,"Riley Boyer",52,"Class.aptent.taciti@aliquet.org"),(83,"Holly Y. King",73,"nec.malesuada@pedeblandit.org"),(84,"Isabelle D. Mccarty",87,"dapibus.gravida@utodio.com");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (85,"Buckminster Phelps",85,"libero.Integer@tristique.co.uk"),(86,"Ulysses Hancock",76,"augue.ut@sapiencursus.net"),(87,"Jasmine Booker",83,"elit@nisiCumsociis.co.uk"),(88,"Susan M. Stone",81,"facilisis@ridiculusmus.org"),(89,"Ashton L. Vincent",63,"erat.in.consectetuer@imperdiet.co.uk"),(90,"Ursula Holcomb",62,"Nunc@magnatellus.com"),(91,"Wanda Y. Mcclain",28,"non@lorem.edu"),(92,"Mary Alford",29,"et.nunc@sit.org"),(93,"Hope Z. Atkins",47,"lobortis.Class@magna.org"),(94,"Juliet F. Love",80,"justo.Praesent.luctus@orciDonec.edu");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (95,"Wyatt Frazier",76,"lorem.vehicula@Morbinequetellus.co.uk"),(96,"Brenna Mccormick",61,"at.risus@Morbi.ca"),(97,"Samson R. Best",19,"convallis.ligula@orci.edu"),(98,"Avye A. Herman",43,"lorem@sitametconsectetuer.edu"),(99,"Rylee U. Wilkerson",44,"nec.cursus@loremtristique.ca"),(100,"Kasimir Gregory",43,"lobortis@auctornunc.co.uk"),(101,"Jasmine Rivers",25,"dictum.placerat@Quisque.com"),(102,"Hedwig Shepard",87,"pharetra.felis@Vivamusnon.edu"),(103,"Alisa K. Kim",24,"parturient@eratnonummy.net"),(104,"Eugenia Glenn",55,"arcu@Cras.edu");
+
+-- select * from itau.clientes order by nome_cliente;
+
+SELECT 
+    nome_cliente, idade_cliente, email_cliente
+FROM
+    itau.clientes
+WHERE
+    idade_cliente >= 18
+        AND idade_cliente <= 30
+ORDER BY idade_cliente;
+
+SELECT 
+    *
+FROM
+    itau.clientes
+WHERE
+    idade_cliente IN (20 , 30, 40)
+ORDER BY idade_cliente;
+
+select min(idade_cliente) from itau.clientes;
+select * from itau.clientes where idade_cliente=18;
+
+SELECT 
+    *
+FROM
+    itau.clientes
+WHERE
+    idade_cliente = (SELECT 
+            MAX(idade_cliente)
+        FROM
+            itau.clientes);
+            
+select * from itau.clientes where nome_cliente like "carlos%";
+select * from itau.clientes where nome_cliente like "%Eduardo";
+select * from itau.clientes where nome_cliente like "%A.%";
+select * from itau.clientes where nome_cliente like "a%" order by nome_cliente;
+select * from itau.clientes where email_cliente like "%.com";
+use itau;
+alter table itau.clientes add endereco_clientes varchar(60) not null;
+alter table itau.clientes drop endereco_cliente;
+describe itau.clientes;
+
+alter table itau.clientes rename column endereco_clientes to endereco_cliente;
+
+update itau.clientes set endereco_cliente="Rua Florida" where codigo_cliente=2; 
+select * from itau.clientes where codigo_cliente=2;
+
+update itau.clientes set endereco_cliente="Rua Libano" where nome_cliente like "Lais%";
+select * from itau.clientes where nome_cliente like "Lais%";
+
+update itau.clientes set endereco_cliente="Alterar endereco" where endereco_cliente='';
+select * from itau.clientes;
+use itau;
+create table itau.bck_clientes select * from itau.clientes;
+
+select * from itau.bck_clientes;
+describe itau.bck_clientes;
+describe itau.clientes;
+delete from itau.clientes;
+use itau;
+
+insert into itau.clientes (codigo_cliente,nome_cliente,idade_cliente,email_cliente,endereco_cliente) select codigo_cliente,nome_cliente,idade_cliente,email_cliente,endereco_cliente from itau.bck_clientes;
+
+delete from itau.clientes where idade_cliente>50;
+
+select count(*) from itau.clientes where idade_cliente>50;
+
+insert into itau.clientes
+(codigo_cliente,nome_cliente,idade_cliente,email_cliente,endereco_cliente)
+select codigo_cliente,nome_cliente,idade_cliente,email_cliente,endereco_cliente from itau.bck_clientes where idade_cliente>50;
+
+create database unibanco;
+
+create table unibanco.clientes select * from itau.clientes;
+
+drop table itau.clientes;
+drop table itau.bck_clientes;
+
+use itau;
+
+create table itau.clientes(
+codigo_cliente integer not null auto_increment,
+nome_cliente varchar(50) not null,
+cpf_cliente char(11) not null,
+endereco_cliente varchar(80) not null,
+bairro_cliente varchar (50) not null,
+estado_cliente char(2) not null,
+cep_cliente char(9) not null,
+ddd_cliente char(3) not null,
+telefone_cliente char(9) not null,
+email_cliente varchar(60) not null,
+agencia_cliente char(4) not null,
+conta_corrente char(6) not null,
+digito_verificador integer(1) not null,
+data_de_autalizacao_do_registro datetime,
+primary key (codigo_cliente,cpf_cliente));
+
+describe itau.clientes;
+
+alter table itau.clientes rename column data_de_autalizacao_do_registro to data_de_atualizacao_do_registro;
+
+insert into itau.clientes
+(nome_cliente,cpf_cliente,endereco_cliente,bairro_cliente,estado_cliente,cep_cliente,ddd_cliente,telefone_cliente,email_cliente,agencia_cliente,conta_corrente,digito_verificador,data_de_atualizacao_do_registro)
+select nome_cliente,"Atualizar",endereco_cliente,"Atualizar bairro","xx","000000000","000","000000000",email_cliente,"0000","000000",0,now() from unibanco.clientes;
+
+select * from itau.clientes;
